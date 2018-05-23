@@ -17,6 +17,7 @@ class Board{
 		Board& operator=(const char x);
 		Board& operator=(const Board& B);
 		cell& operator[](Coordinate cord);
+		~Board();
 		
 };
 
