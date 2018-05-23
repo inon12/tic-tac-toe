@@ -12,6 +12,7 @@ class Board{
 		int size;
 		Board(int s);
 		Board(const Board& other);
+		bool operator==(const Board& first,const Board& second)const;
 		friend ostream& operator<<(ostream& os,const Board& board);
 		Board& operator=(const char x);
 		Board& operator=(const Board& B);

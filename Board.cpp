@@ -28,7 +28,6 @@ ostream& operator<<(ostream& os,const Board& board){
 		}
 		cout<<endl;
 	}
-	cout<<endl;
 	return os;
 }
 Board& Board::operator=(const char x){
@@ -40,6 +39,17 @@ Board& Board::operator=(const char x){
 				this->matrix[i][j]=x;
 		return *this;
 		}
+}
+bool Board:: operator==(const Board& first,const Board& second)const{
+	if(first.size!=second.size)
+		return false;
+	for(int i=0;i<size;i++){
+		for(int j=0;j<size;j++){
+			if(first.matrix[i][j]!=second.matrix[i][j])
+				return false;
+		}
+	}
+	return true;
 }
 Board& Board::operator=(const Board& B){
 	for(int i=0;i<size;i++)
