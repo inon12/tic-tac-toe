@@ -1,6 +1,6 @@
 #include <iostream>
-#include "cell.hpp"
-#include "IllegalCharException.hpp"
+#include "cell.h"
+#include "IllegalCharException.h"
 cell::cell(){
 	a='.';
 }

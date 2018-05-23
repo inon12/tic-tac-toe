@@ -1,6 +1,6 @@
 #include <string>
 #include <iostream>
-#include "IllegalCoordinateException.hpp"
+#include "IllegalCoordinateException.h"
 using namespace std;
 IllegalCoordinateException::IllegalCoordinateException(Coordinate C){
 	coord.x=C.x;
