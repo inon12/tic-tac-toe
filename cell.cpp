@@ -18,7 +18,7 @@ cell& cell::operator=(const char y){
 	return *this;
 }
 ostream& operator<<(ostream& os,const cell& Cell){
-	cout<<Cell.a;
+	os<<Cell.a;
 	return os;
 }
 cell::operator char(){
