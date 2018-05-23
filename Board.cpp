@@ -40,12 +40,12 @@ Board& Board::operator=(const char x){
 		return *this;
 		}
 }
-bool Board:: operator==(const Board& first,const Board& second)const{
-	if(first.size!=second.size)
+bool Board::operator==(const Board& second)const{
+	if(this->size!=second.size)
 		return false;
 	for(int i=0;i<size;i++){
 		for(int j=0;j<size;j++){
-			if(first.matrix[i][j]!=second.matrix[i][j])
+			if(matrix[i][j]!=second.matrix[i][j])
 				return false;
 		}
 	}
