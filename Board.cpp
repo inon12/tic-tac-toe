@@ -28,6 +28,7 @@ ostream& operator<<(ostream& os,const Board& board){
 		}
 		cout<<endl;
 	}
+	cout<<endl;
 	return os;
 }
 Board& Board::operator=(const char x){
