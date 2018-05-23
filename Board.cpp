@@ -59,7 +59,7 @@ Board& Board::operator=(const char x){
 	return true;
 }*/
 Board& Board::operator=(const Board& B){
-	this->~Board();
+	//this->~Board();
 	size=B.size;
 	for(int i=0;i<size;i++)
 		for(int j=0;j<size;j++)
