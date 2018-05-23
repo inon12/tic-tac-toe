@@ -10,5 +10,6 @@ class cell{
 		cell& operator=(const char a);
 		friend ostream& operator<<(ostream& os,const cell& Cell);
 		operator char();
+		bool operator==(const char& Cell)const;
 };
 

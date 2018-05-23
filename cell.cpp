@@ -24,3 +24,8 @@ ostream& operator<<(ostream& os,const cell& Cell){
 cell::operator char(){
 	return a;
 }
+bool cell::operator==(const char& Cell)const{
+	if(this->a==Cell)
+		return true;
+	return false;
+}
