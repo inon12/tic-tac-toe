@@ -26,7 +26,7 @@ ostream& operator<<(ostream& os,Board const& board){
 		for(int j=0;j<board.size;j++){
 			os<<board.matrix[i][j];
 		}
-		os<<endl;
+		os<<"\n";
 	}
 	return os;
 }
