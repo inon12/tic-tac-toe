@@ -23,9 +23,9 @@ Board::Board(const Board& other){
 }
 Board::~Board(){
 	for(int i=0;i<size;i++){
-		delete matrix[i];
+		delete[] matrix[i];
 	}
-	delete matrix;
+	delete[] matrix;
 }
 			
 ostream& operator<<(ostream& os,Board const& board){
@@ -59,6 +59,7 @@ Board& Board::operator=(const char x){
 	return true;
 }*/
 Board& Board::operator=(const Board& B){
+	this->~Board();
 	size=B.size;
 	for(int i=0;i<size;i++)
 		for(int j=0;j<size;j++)
