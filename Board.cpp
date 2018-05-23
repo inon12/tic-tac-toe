@@ -40,7 +40,7 @@ Board& Board::operator=(const char x){
 		return *this;
 		}
 }
-bool Board::operator==(const Board& second)const{
+/*bool Board::operator==(const Board& second)const{
 	if(this->size!=second.size)
 		return false;
 	for(int i=0;i<size;i++){
@@ -50,7 +50,7 @@ bool Board::operator==(const Board& second)const{
 		}
 	}
 	return true;
-}
+}*/
 Board& Board::operator=(const Board& B){
 	for(int i=0;i<size;i++)
 		for(int j=0;j<size;j++)
