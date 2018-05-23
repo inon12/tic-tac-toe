@@ -26,7 +26,7 @@ ostream& operator<<(ostream& os,const Board& board){
 		for(int j=0;j<board.size;j++){
 			cout<<board.matrix[i][j];
 		}
-		cout<<endl;
+		cout<<"\n";
 	}
 	return os;
 }
