@@ -21,6 +21,13 @@ Board::Board(const Board& other){
 				matrix[i][j]=other.matrix[i][j];
 		}
 }
+Board::~Board(){
+	for(int i=0;i<size;i++){
+		delete matrix[i];
+	}
+	delete matrix;
+}
+			
 ostream& operator<<(ostream& os,Board const& board){
 	for(int i=0;i<board.size;i++){
 		for(int j=0;j<board.size;j++){
