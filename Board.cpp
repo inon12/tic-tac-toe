@@ -24,9 +24,9 @@ Board::Board(const Board& other){
 ostream& operator<<(ostream& os,const Board& board){
 	for(int i=0;i<board.size;i++){
 		for(int j=0;j<board.size;j++){
-			cout<<board.matrix[i][j];
+			os<<board.matrix[i][j];
 		}
-		cout<<"\n";
+		os<<"\n";
 	}
 	return os;
 }
